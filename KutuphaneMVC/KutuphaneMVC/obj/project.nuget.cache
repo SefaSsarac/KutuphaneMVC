@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bD16cK9tkYg=",
+  "success": true,
+  "projectFilePath": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\KutuphaneMVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ysefa\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\8.0.8\\microsoft.aspnetcore.dataprotection.abstractions.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

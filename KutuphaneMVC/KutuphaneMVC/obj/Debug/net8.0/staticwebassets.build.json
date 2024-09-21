@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "MErBW7uf3k9e5nvq/f0bIyVRojKfl0kOfARKPgH7blk=",
+  "Source": "KutuphaneMVC",
+  "BasePath": "_content/KutuphaneMVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "KutuphaneMVC\\wwwroot",
+      "Source": "KutuphaneMVC",
+      "ContentRoot": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\",
+      "BasePath": "_content/KutuphaneMVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\css\\site.css",
+      "SourceId": "KutuphaneMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\",
+      "BasePath": "_content/KutuphaneMVC",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\lib\\bootstrap.css",
+      "SourceId": "KutuphaneMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\",
+      "BasePath": "_content/KutuphaneMVC",
+      "RelativePath": "lib/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap.css"
+    }
+  ]
+}

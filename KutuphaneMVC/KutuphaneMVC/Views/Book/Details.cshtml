@@ -1,0 +1,9 @@
+﻿@model Book
+
+<h1>@Model.Title</h1> <!-- Display the book title -->
+<p><strong>Author ID:</strong> @Model.AuthorId</p> <!-- Display the author ID -->
+<p><strong>Genre:</strong> @Model.Genre</p> <!-- Display the book genre -->
+<p><strong>Publish Date:</strong> @Model.PublishDate.ToShortDateString()</p> <!-- Display the publish date -->
+<p><strong>ISBN:</strong> @Model.ISBN</p> <!-- Display the ISBN -->
+<p><strong>Copies Available:</strong> @Model.CopiesAvailable</p> <!-- Display the number of available copies -->
+<a href="@Url.Action("List", "Book")">Back</a> <!-- Link to go back to the book list -->

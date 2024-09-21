@@ -1,0 +1,5 @@
+﻿@model Author
+
+<h1>@Model.FirstName @Model.LastName</h1> <!-- Display author's full name -->
+<p><strong>Date of Birth:</strong> @Model.DateOfBirth.ToShortDateString()</p> <!-- Display author's date of birth in short format -->
+<a href="@Url.Action("List", "Author")">Go Back</a> <!-- Link to return to the authors list -->

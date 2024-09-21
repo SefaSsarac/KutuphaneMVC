@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="alert alert-info text-center fw-bold">
+    Hoşgeldiniz, @User.Claims.FirstOrDefault(x => x.Type == "email")?.Value!
+
+    @if (@User.Claims.FirstOrDefault(x => x.Type == "id")?.Value != null)
+    {
+        <h1 class="mt-4">Ana Sayfa</h1>
+        <p class="lead">Kütüphane Sistemine Hoş Geldiniz!</p>
+        <p>Burada kitaplar ve yazarlar hakkında bilgileri kaydedebilir, düzenleyebilir ve görüntüleyebilirsiniz.</p>
+
+        <div class="mt-4">
+            <a href="@Url.Action("List", "Book")" class="btn btn-primary btn-lg me-3">Kitapları Görüntüle</a>
+            <a href="@Url.Action("List", "Author")" class="btn btn-primary btn-lg">Yazarları Görüntüle</a>
+        </div>
+    }
+</div>

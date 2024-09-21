@@ -1,0 +1,39 @@
+﻿@model AuthorViewModel
+
+<h1>Authors</h1> <!-- Header for the authors list -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th> <!-- Column for author's first name -->
+            <th>Last Name</th> <!-- Column for author's last name -->
+            <th>Date of Birth</th> <!-- Column for author's date of birth -->
+            <th>Actions</th> <!-- Column for actions -->
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Authors != null && Model.Authors.Any())
+        {
+            foreach (var author in Model.Authors)
+            {
+                <tr>
+                    <td>@author.FirstName</td> <!-- Display author's first name -->
+                    <td>@author.LastName</td> <!-- Display author's last name -->
+                    <td>@author.DateOfBirth.ToShortDateString()</td> <!-- Display author's date of birth -->
+                    <td>
+                        <a href="@Url.Action("Details", "Author", new { id = author.Id })" class="btn btn-info btn-sm">Details</a> <!-- Link to author's details -->
+                        <a href="@Url.Action("Edit", "Author", new { id = author.Id })" class="btn btn-warning btn-sm">Edit</a> <!-- Link to edit author -->
+                        <a href="@Url.Action("Delete", "Author", new { id = author.Id })" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this author?');">Delete</a> <!-- Link to delete author with confirmation -->
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-center">No authors found.</td> <!-- Message when no authors are available -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Author")" class="btn btn-primary">Add New Author</a> <!-- Button to add a new author -->

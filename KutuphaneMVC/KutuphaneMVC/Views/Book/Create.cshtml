@@ -1,0 +1,38 @@
+﻿@model Book
+
+<h1>Add New Book</h1> <!-- Header for adding a new book -->
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Title">Title:</label> <!-- Label for book title -->
+        <input asp-for="Title" class="form-control" required /> <!-- Input for book title -->
+        <span asp-validation-for="Title" class="text-danger"></span> <!-- Error message for title -->
+    </div>
+    <div class="form-group">
+        <label for="AuthorId">Author ID:</label> <!-- Label for author ID -->
+        <input asp-for="AuthorId" class="form-control" required /> <!-- Input for author ID -->
+        <span asp-validation-for="AuthorId" class="text-danger"></span> <!-- Error message for author ID -->
+    </div>
+    <div class="form-group">
+        <label for="Genre">Genre:</label> <!-- Label for book genre -->
+        <input asp-for="Genre" class="form-control" required /> <!-- Input for book genre -->
+        <span asp-validation-for="Genre" class="text-danger"></span> <!-- Error message for genre -->
+    </div>
+    <div class="form-group">
+        <label for="PublishDate">Publish Date:</label> <!-- Label for publish date -->
+        <input asp-for="PublishDate" type="date" class="form-control" required /> <!-- Input for publish date -->
+        <span asp-validation-for="PublishDate" class="text-danger"></span> <!-- Error message for publish date -->
+    </div>
+    <div class="form-group">
+        <label for="ISBN">ISBN:</label> <!-- Label for ISBN -->
+        <input asp-for="ISBN" class="form-control" required /> <!-- Input for ISBN -->
+        <span asp-validation-for="ISBN" class="text-danger"></span> <!-- Error message for ISBN -->
+    </div>
+    <div class="form-group">
+        <label for="CopiesAvailable">Copies Available:</label> <!-- Label for available copies -->
+        <input asp-for="CopiesAvailable" class="form-control" required /> <!-- Input for copies available -->
+        <span asp-validation-for="CopiesAvailable" class="text-danger"></span> <!-- Error message for available copies -->
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button> <!-- Button to save the book -->
+    <a href="@Url.Action("List", "Book")" class="btn btn-secondary">Cancel</a> <!-- Button to cancel and go back to the list -->
+</form>
+<div asp-validation-summary="All" class="text-danger mt-3"></div> <!-- Summary for all validation errors -->

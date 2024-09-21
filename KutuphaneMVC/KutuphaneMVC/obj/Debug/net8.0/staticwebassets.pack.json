@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Yazılım\\Repository\\KutuphaneMVC\\KutuphaneMVC\\wwwroot\\lib\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KutuphaneMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KutuphaneMVC.props",
+      "PackagePath": "build\\KutuphaneMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KutuphaneMVC.props",
+      "PackagePath": "buildMultiTargeting\\KutuphaneMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KutuphaneMVC.props",
+      "PackagePath": "buildTransitive\\KutuphaneMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

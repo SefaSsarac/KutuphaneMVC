@@ -1,0 +1,46 @@
+﻿@model Book
+
+<h1>Edit Book</h1> <!-- Header for editing a book -->
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" /> <!-- Hidden input for the book ID -->
+
+    <div class="form-group">
+        <label for="Title">Title:</label>
+        <input asp-for="Title" class="form-control" required /> <!-- Input for the book title -->
+        <span asp-validation-for="Title" class="text-danger"></span> <!-- Error message for title validation -->
+    </div>
+
+    <div class="form-group">
+        <label for="AuthorId">Author ID:</label>
+        <input asp-for="AuthorId" class="form-control" required /> <!-- Input for the author ID -->
+        <span asp-validation-for="AuthorId" class="text-danger"></span> <!-- Error message for author ID validation -->
+    </div>
+
+    <div class="form-group">
+        <label for="Genre">Genre:</label>
+        <input asp-for="Genre" class="form-control" required /> <!-- Input for the book genre -->
+        <span asp-validation-for="Genre" class="text-danger"></span> <!-- Error message for genre validation -->
+    </div>
+
+    <div class="form-group">
+        <label for="PublishDate">Publish Date:</label>
+        <input asp-for="PublishDate" type="date" class="form-control" required /> <!-- Input for the publish date -->
+        <span asp-validation-for="PublishDate" class="text-danger"></span> <!-- Error message for publish date validation -->
+    </div>
+
+    <div class="form-group">
+        <label for="ISBN">ISBN:</label>
+        <input asp-for="ISBN" class="form-control" required /> <!-- Input for the ISBN -->
+        <span asp-validation-for="ISBN" class="text-danger"></span> <!-- Error message for ISBN validation -->
+    </div>
+
+    <div class="form-group">
+        <label for="CopiesAvailable">Copies Available:</label>
+        <input asp-for="CopiesAvailable" class="form-control" required /> <!-- Input for available copies -->
+        <span asp-validation-for="CopiesAvailable" class="text-danger"></span> <!-- Error message for copies available validation -->
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button> <!-- Button to submit the form -->
+    <a href="@Url.Action("List", "Book")" class="btn btn-secondary">Cancel</a> <!-- Link to cancel and go back to the list -->
+</form>
+<div asp-validation-summary="All" class="text-danger mt-3"></div> <!-- Summary of validation errors -->

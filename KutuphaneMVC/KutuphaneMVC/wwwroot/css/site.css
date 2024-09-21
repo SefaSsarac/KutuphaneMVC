@@ -1,0 +1,54 @@
+﻿body {
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Gradient background */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif;
+}
+/* Font family */
+
+footer {
+    position: fixed; /* or fixed */
+    bottom: 0;
+    width: 9999999999999999999%;
+}
+
+.navbar {
+    background-color: #D1B5A5 !important; /* Pastel brown */
+    transition: background-color 0.3s; /* Background color transition */
+    border-bottom: none; /* Removed bottom border */
+    padding: 10px 20px; /* Navbar padding */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Text color */
+    padding: 10px 15px; /* Link padding */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+    font-family: Cambria;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-family: Cambria;
+    margin-left: 30px; /* Add left margin to KÜTÜPHANE text */
+    font-size: 1.6rem; /* Larger heading */
+    letter-spacing: 1px; /* Letter spacing */
+}
+
+.logout-button {
+    background-color: #ff4c4c; /* Red background */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Change cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effect */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+}
+
+    .logout-button:hover {
+        background-color: #e60000; /* Hover effect */
+        transform: scale(1.05); /* Grow effect on hover */
+        color: #ffffff; /* White text color on hover */
+    }

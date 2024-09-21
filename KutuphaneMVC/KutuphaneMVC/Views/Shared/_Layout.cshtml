@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link href="~/lib/bootstrap.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KÜTÜPHANE</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow">
+            <a class="navbar-brand fw-bold" href="@Url.Action("Index", "Home")">KÜTÜPHANE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("List", "Book")">Kitaplar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("List", "Author")">Yazarlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("SignUp", "Auth")">Kayıt Ol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login", "Auth")">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About", "Home")">Hakkında</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto" style="padding: 10px;">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-action="LogOut" method="post" style="display:inline;">
+                        <button type="submit" class="logout-button">Oturumu Kapat</button>
+                    </form>
+                }
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    @await Html.PartialAsync("_Footer")
+
+    <script src="script.js"></script>
+</body>
+</html>

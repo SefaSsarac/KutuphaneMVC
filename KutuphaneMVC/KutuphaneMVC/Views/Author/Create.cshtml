@@ -1,0 +1,23 @@
+﻿@model Author
+
+<h1>Add New Author</h1>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="FirstName">First Name:</label>
+        <input asp-for="FirstName" class="form-control" required />
+        <span asp-validation-for="FirstName" class="text-danger"></span> <!-- Error message for First Name -->
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name:</label>
+        <input asp-for="LastName" class="form-control" required />
+        <span asp-validation-for="LastName" class="text-danger"></span> <!-- Error message for Last Name -->
+    </div>
+    <div class="form-group">
+        <label for="DateOfBirth">Date of Birth:</label>
+        <input asp-for="DateOfBirth" type="date" class="form-control" required />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span> <!-- Error message for Date of Birth -->
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button> <!-- Submit button for saving the author -->
+    <a href="@Url.Action("List", "Author")" class="btn btn-secondary">Cancel</a> <!-- Button to cancel and return to the list -->
+</form>
+<div asp-validation-summary="All" class="text-danger mt-3"></div> <!-- Validation summary for all errors -->
