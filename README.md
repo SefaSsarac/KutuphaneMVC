@@ -16,6 +16,12 @@ This project is a **Library** built with ASP.NET Core. It allows users to regist
 - Error handling and validation
 - Data protection for user passwords
 
+## Configuration
+You can configure various aspects of the application in the appsettings.json file, such as:
+
+Database connection strings: Specify the connection details for your SQL Server database.
+Application settings: Adjust settings such as logging, authentication, and other environment-specific configurations.
+
 ## Installation
 To set up the project locally, follow these steps:
 
