@@ -3,12 +3,6 @@
 ## Description
 This project is a **Library** built with ASP.NET Core. It allows users to register, log in, manage authors and books, and perform CRUD (Create, Read, Update, Delete) operations.
 
-## Technologies Used
-- **ASP.NET Core:** A cross-platform framework for building modern web applications.
-- **Bootstrap:** A front-end framework for designing responsive web applications.
-- **HTML/CSS:** Standard technologies for building web pages.
-- **Visual Studio:** An integrated development environment (IDE) for developing .NET applications.
-
 ## Features
 - User registration and authentication
 - CRUD operations for authors and books
@@ -75,8 +69,16 @@ Make your changes
 Commit and push your changes
 Create a pull request
 
+## Technologies Used
+- **ASP.NET Core:** A cross-platform framework for building modern web applications.
+- **Bootstrap:** A front-end framework for designing responsive web applications.
+- **HTML/CSS:** Standard technologies for building web pages.
+- **Visual Studio:** An integrated development environment (IDE) for developing .NET applications.
+
 ### Acknowledgments
 Thanks to the  Patika.dev community for their excellent teaching abilities, documentation and resources.
+
+
 
 
 
